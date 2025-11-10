@@ -1,0 +1,68 @@
+# --- dotnet / build ---
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+TestResult*/
+*.log
+*.tlog
+*.etl
+*.coverage
+*.coveragexml
+*.opencover.xml
+artifacts/
+publish/
+
+# --- Visual Studio / .NET user files ---
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+
+# --- Rider / JetBrains ---
+.idea/
+*.sln.iml
+_ReSharper*/
+_ReSharper.Caches/
+*.ReSharper
+
+# --- NuGet ---
+packages/
+.nuget/
+*.nupkg
+*.snupkg
+project.lock.json
+
+# --- Editors / OS ---
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# --- Docker / env ---
+.env
+.env.*
+!.env.example
+docker-data/
+**/docker-compose.override.yml
+
+# --- Secrets / local config (keep appsettings.*.json except local variants) ---
+secrets.json
+**/appsettings.*.local.json
+**/appsettings.Development.Local.json
+UserSecrets/
+
+# --- Cache / temp ---
+*.tmp
+*.cache
+*.bak
+*.swp
+*.swo
+*.orig
+
+# --- Node (if you add a frontend later) ---
+node_modules/
+dist/
+coverage/
